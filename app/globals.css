@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: #FFF8EC;
+  color: #0B0B0B;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: #FFD23F;
+  color: #0B0B0B;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .grain {
+    background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+  .ticker-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  }
+  .stripes {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #FFD23F 0,
+      #FFD23F 20px,
+      #0B0B0B 20px,
+      #0B0B0B 24px
+    );
+  }
+}
