@@ -27,9 +27,10 @@ export const business = {
     { day: "Sun", open: "12:00", close: "23:00" },
   ] as const,
   socials: {
-    instagram: "https://instagram.com/shawarmahut", // TODO
-    tiktok: "https://tiktok.com/@shawarmahut", // TODO
-    instagramHandle: "@shawarmahut",
+    instagram: "https://instagram.com/shawarmahutlondon",
+    tiktok: "https://www.tiktok.com/@shawarmahutlondon",
+    tiktokHandle: "@shawarmahutlondon",
+    instagramHandle: "@shawarmahutlondon",
   },
   delivery: {
     deliveroo: "#", // TODO
