@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { menu, tagLabels, type MenuCategory } from "@/lib/menu";
 
 export function MenuSection() {
@@ -70,29 +71,41 @@ function CategoryBlock({ cat }: { cat: MenuCategory }) {
         {cat.items.map((item) => (
           <div
             key={item.name}
-            className="group relative bg-white border-2 border-brand-black rounded-3xl p-5 shadow-[4px_4px_0_0_#0B0B0B] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#0B0B0B] transition-all"
+            className="group relative bg-white border-2 border-brand-black rounded-3xl overflow-hidden shadow-[4px_4px_0_0_#0B0B0B] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#0B0B0B] transition-all flex flex-col"
           >
-            <div className="flex items-start justify-between gap-3 mb-2">
-              <h4 className="font-display font-extrabold text-lg sm:text-xl leading-tight">
-                {item.name}
-              </h4>
-              <span className="shrink-0 font-display font-extrabold text-base bg-brand-yellow border-2 border-brand-black rounded-full px-3 py-1">
-                {item.price}
-              </span>
-            </div>
-            <p className="text-sm text-brand-black/70">{item.description}</p>
-            {item.tags && item.tags.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {item.tags.map((t) => (
-                  <span
-                    key={t}
-                    className={`text-[10px] sm:text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${tagLabels[t].className}`}
-                  >
-                    {tagLabels[t].label}
-                  </span>
-                ))}
+            {item.image && (
+              <div className="relative w-full h-48 overflow-hidden bg-gray-200">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform"
+                />
               </div>
             )}
+            <div className="p-5 flex flex-col flex-1">
+              <div className="flex items-start justify-between gap-3 mb-2">
+                <h4 className="font-display font-extrabold text-lg sm:text-xl leading-tight">
+                  {item.name}
+                </h4>
+                <span className="shrink-0 font-display font-extrabold text-base bg-brand-yellow border-2 border-brand-black rounded-full px-3 py-1">
+                  {item.price}
+                </span>
+              </div>
+              <p className="text-sm text-brand-black/70 flex-1">{item.description}</p>
+              {item.tags && item.tags.length > 0 && (
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {item.tags.map((t) => (
+                    <span
+                      key={t}
+                      className={`text-[10px] sm:text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${tagLabels[t].className}`}
+                    >
+                      {tagLabels[t].label}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
