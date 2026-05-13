@@ -72,7 +72,7 @@ const localBusinessJsonLd = {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: h.day,
     opens: h.open,
-    closes: h.close === "00:00" ? "23:59" : h.close,
+    closes: h.close,
   })),
   sameAs: [business.socials.instagram, business.socials.tiktok],
 };

@@ -29,8 +29,7 @@ function isOpenNow() {
   const h = business.hours.find((x) => x.day === today);
   if (!h) return false;
   const open = toMinutes(h.open);
-  // close at "00:00" means midnight = 24*60
-  const close = h.close === "00:00" ? 24 * 60 : toMinutes(h.close);
+  const close = toMinutes(h.close);
   const n = nowMinutes();
   return n >= open && n < close;
 }
@@ -134,7 +133,7 @@ export function Visit() {
                 >
                   <span>{d}</span>
                   <span className="font-mono tabular-nums">
-                    {h ? `${h.open} – ${h.close === "00:00" ? "Late" : h.close}` : "Closed"}
+                    {h ? `${h.open} – ${h.close}` : "Closed"}
                   </span>
                 </li>
               );
