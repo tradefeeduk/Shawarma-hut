@@ -74,12 +74,13 @@ function CategoryBlock({ cat }: { cat: MenuCategory }) {
             className="group relative bg-white border-2 border-brand-black rounded-3xl overflow-hidden shadow-[4px_4px_0_0_#0B0B0B] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#0B0B0B] transition-all flex flex-col"
           >
             {item.image && (
-              <div className="relative w-full h-48 overflow-hidden bg-gray-200">
+              <div className="relative w-full h-64 sm:h-72 overflow-hidden bg-gray-200">
                 <Image
                   src={item.image}
                   alt={item.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform"
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  priority
                 />
               </div>
             )}
