@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { menu, tagLabels, type MenuCategory } from "@/lib/menu";
 
 export function MenuSection() {
@@ -73,17 +72,6 @@ function CategoryBlock({ cat }: { cat: MenuCategory }) {
             key={item.name}
             className="group relative bg-white border-2 border-brand-black rounded-3xl overflow-hidden shadow-[4px_4px_0_0_#0B0B0B] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#0B0B0B] transition-all flex flex-col"
           >
-            {item.image && (
-              <div className="relative w-full h-64 sm:h-72 overflow-hidden bg-gray-200">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                  priority
-                />
-              </div>
-            )}
             <div className="p-5 flex flex-col flex-1">
               <div className="flex items-start justify-between gap-3 mb-2">
                 <h4 className="font-display font-extrabold text-lg sm:text-xl leading-tight">
