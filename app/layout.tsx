@@ -18,7 +18,7 @@ const display = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shawarmahut.uk"),
-  title: `${business.name} — ${business.tagline}`,
+  title: `${business.name} | ${business.tagline}`,
   description: business.shortDescription,
   keywords: [
     "shawarma",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "middle eastern food london",
   ],
   openGraph: {
-    title: `${business.name} — ${business.tagline}`,
+    title: `${business.name} | ${business.tagline}`,
     description: business.shortDescription,
     url: "https://shawarmahut.uk",
     siteName: business.name,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${business.name} — ${business.tagline}`,
+    title: `${business.name} | ${business.tagline}`,
     description: business.shortDescription,
   },
   robots: { index: true, follow: true },

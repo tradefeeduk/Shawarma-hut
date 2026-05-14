@@ -48,7 +48,7 @@ export const menu: MenuCategory[] = [
       {
         name: "Spicy Chicken Wrap",
         description:
-          "Chicken shawarma fired up with chilli sauce, jalapeños, hot pickles.",
+          "Chicken shawarma with chilli sauce, jalapeños, hot pickles.",
         price: "£5.50",
         tags: ["spicy"],
         image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Spicy+Wrap",
@@ -106,7 +106,7 @@ export const menu: MenuCategory[] = [
     emoji: "🍟",
     items: [
       { name: "Loaded Fries", description: "Shawarma meat, garlic sauce, chilli, pickles.", price: "£3.00", tags: ["new"], image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Loaded+Fries" },
-      { name: "Hummus & Bread", description: "Velvety hummus, olive oil, warm flatbread.", price: "£3.00", tags: ["veg"], image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Hummus" },
+      { name: "Hummus & Bread", description: "Smooth hummus, olive oil, warm flatbread.", price: "£3.00", tags: ["veg"], image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Hummus" },
       { name: "Halloumi Fries", description: "Crispy halloumi, honey, chilli flakes.", price: "£4.00", tags: ["veg"], image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Halloumi+Fries" },
       { name: "Fries", description: "Crispy seasoned fries.", price: "£3.00", tags: ["veg"], image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Fries" },
       { name: "Garden Salad", description: "Tomato, cucumber, onion, herbs, lemon.", price: "£3.00", tags: ["veg"], image: "https://placehold.co/600x500/f3f4f6/6b7280?text=Garden+Salad" },

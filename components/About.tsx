@@ -38,7 +38,7 @@ export function About() {
           <p className="mt-6 text-lg text-brand-cream/80 max-w-2xl">
             We came to London with a family recipe, a charcoal grill, and a stubborn belief
             that shawarma should taste like it does back home. Then the queues started.
-            Then the cameras. Then everything changed — but our recipe didn't.
+            Then the cameras. Then everything changed, but our recipe didn't.
           </p>
         </div>
 

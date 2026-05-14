@@ -5,7 +5,7 @@ export const business = {
   name: "Shawarma Hut",
   tagline: "London's most-talked-about shawarma",
   shortDescription:
-    "Charcoal-grilled meats, 24-hour marinated, hand-pressed wraps. The viral shawarma spot London can't stop posting about.",
+    "Charcoal-grilled meats, 24-hour marinated, hand-pressed wraps.",
   address: {
     line1: "292b Walworth Road",
     line2: "London, SE17 2TE",
@@ -41,7 +41,7 @@ export const business = {
     "⭐ 4.9 on Google",
     "🔥 5M+ views on TikTok",
     "📍 As seen on Time Out London",
-    "🌶️ #1 shawarma in the UK — Reddit r/londonfood",
+    "🌶️ #1 shawarma in the UK (Reddit r/londonfood)",
     "📣 Featured by The Standard",
     "🎬 Viral on Instagram Reels",
   ],
